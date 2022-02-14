@@ -67,6 +67,9 @@ body{
     .hands{
         height: 200px;
     }
+    #play-again{
+        margin-top: 50px;
+    }
 }
 @media screen and (max-width: 714px){
     .hands{
