@@ -8,11 +8,7 @@ function game(){
         const options = document.querySelectorAll(".selections .select-button");
         const playerHand = document.querySelector(".player-hand");
         const computerHand = document.querySelector(".computer-hand");
-        const roundWinner = document.querySelector('.intro h2')
-        
-        //load hand images
-        playerHand.src = `./assets/Rock.png`;
-        computerHand.src = `./assets/Rock.png`;
+        const roundWinner = document.querySelector('.intro h2');
         
         //computer options
         let computerOptions = ['Rock', 'Paper', 'Scissor'];
