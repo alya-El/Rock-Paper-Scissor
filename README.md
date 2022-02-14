@@ -2,4 +2,4 @@
 
 live: https://alya-el.github.io/Rock-Paper-Scissor/
 
-Rock paper scissors game played against the computer.
+Rock-paper-scissors game played against the computer.
