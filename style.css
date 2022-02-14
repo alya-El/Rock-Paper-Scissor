@@ -1,6 +1,84 @@
-*{
-    background-color: #ffff99;
+body{
+    background-color: #ffff00;
+    font-family: 'Staatliches', cursive;
 }
-header{
+.intro{
     text-align: center;
+    margin-bottom: 70px;
+}
+.intro > h1{
+    font-size: 80px;
+}
+.intro > h2 {
+    color: #2a2a19;
+}
+.match, .scoreboard{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+.scoreboard{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding-top: 40px;
+}
+.choices{
+    border: 5px solid black;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    background-color: #ffff66;
+}
+.hands, .selections{
+    display: flex; 
+    justify-content: space-between;
+}
+.selections{
+    padding: 0 50px 50px 50px;
+}
+.select-button{
+    height: 50px;
+    min-width: 100px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.select-button:hover{
+    color: white;
+    background-color: black;
+}
+.player-hand{
+    transform: scaleX(-1);
+}
+.scores > p{
+    font-size: 30px;
+}
+.scores > h3{
+    font-size: 25px;
+}
+#play-again{
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+@media screen and (max-width: 1042px){
+    .hands{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 714px){
+    .hands{
+        height: 180px;
+    }
+    .selections{
+        padding: 0px;
+    }
+    .select-button{
+        margin-left: 10px;
+    }
+    .match{
+        width: 90%;
+    }
 }

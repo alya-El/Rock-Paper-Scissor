@@ -4,20 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Sissors</title>
+    <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="./style.css">
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script type="text/javascript" src="./external.js"></script>
-    <header>
+    <header class="intro">
         <h1>ROCK PAPER SCISSORS</h1>
-        <h2>Try Your Luck! First to Score 5 Rounds Wins!</h2>
+        <h2>First to Score 5 Points Wins!</h2>
     </header>
 
-    <div id="scoreboard">
-        <h3>You</h3>
-        <h3>Computer</h3>
+    <div class="match">
+        <div class="choices">
+            <h2 class="choices-title">Choose Your Option</h2>
+            <div class="hands">
+                <img class="player-hand" src="./assets/paper.png">
+                <img class="computer-hand" src="./assets/paper.png">
+            </div>
+
+            <div class="scoreboard">
+                <div class="player-score scores">
+                    <h3>You</h3>
+                    <p>0</p>
+                </div>
+                <div class="computer-score scores">
+                    <h3>Computer</h3>
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="selections">
+            <button type="button" id="rock" class="select-button">Rock</button>
+            <button type="button" id="paper" class="select-button">Paper</button>
+            <button type="button" id="scissor" class="select-button">Scissor</button>
+        </div>
+        
+        <button type="button" id="play-again" class="select-button">Play Again</button>
     </div>
+
+    <script type="text/javascript" src="./external.js"></script>
 </body>
 </html>
