@@ -9,7 +9,11 @@ function game(){
         const playerHand = document.querySelector(".player-hand");
         const computerHand = document.querySelector(".computer-hand");
         const roundWinner = document.querySelector('.intro h2')
-
+        
+        //load hand images
+        playerHand.src = `./assets/Rock.png`;
+        computerHand.src = `./assets/Rock.png`;
+        
         //computer options
         let computerOptions = ['Rock', 'Paper', 'Scissor'];
 
